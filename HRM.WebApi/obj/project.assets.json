@@ -10802,11 +10802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.WebApi\\HRM.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.WebApi\\HRM.WebApi.csproj",
       "projectName": "HRM.WebApi",
-      "projectPath": "F:\\HRM\\HRM.WebApi\\HRM.WebApi.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.WebApi\\HRM.WebApi.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10823,14 +10823,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj": {
-              "projectPath": "F:\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj"
             },
-            "F:\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj": {
-              "projectPath": "F:\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj"
             },
-            "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
-              "projectPath": "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj"
             }
           }
         }

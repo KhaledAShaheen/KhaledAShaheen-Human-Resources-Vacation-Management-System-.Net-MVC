@@ -1246,11 +1246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.Models\\HRM.Models.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj",
       "projectName": "HRM.Models",
-      "projectPath": "F:\\HRM\\HRM.Models\\HRM.Models.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.Models\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",

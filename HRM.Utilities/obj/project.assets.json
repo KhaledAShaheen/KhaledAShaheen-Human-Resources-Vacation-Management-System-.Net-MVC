@@ -1122,11 +1122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.Utilities\\Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Utilities\\Utilities.csproj",
       "projectName": "Utilities",
-      "projectPath": "F:\\HRM\\HRM.Utilities\\Utilities.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Utilities\\Utilities.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.Utilities\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",

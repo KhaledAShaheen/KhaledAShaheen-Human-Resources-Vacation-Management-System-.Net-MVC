@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MJeBgKiZXu9kQEy/1me+nMzszsJFiFxPTMJBr9ITO32MZjiXXmzrfEzF+2CcQZOzZ1NRQxBSuvxg89ng2/G3gw==",
+  "dgSpecHash": "huksLkDR27K6QC8oe7HyeDgFVFX0Ajh8FpLoTzf9bIo/IQqqfuM1mG1skM0qCJp9RlLms3m2aR26GM+2Z1IZpQ==",
   "success": true,
-  "projectFilePath": "F:\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj",
+  "projectFilePath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Managers\\HRM.BL.Managers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed\\.nuget\\packages\\autofac\\4.9.4\\autofac.4.9.4.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

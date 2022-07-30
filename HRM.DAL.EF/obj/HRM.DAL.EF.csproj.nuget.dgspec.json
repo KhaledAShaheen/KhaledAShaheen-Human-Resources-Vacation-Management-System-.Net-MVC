@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {}
+    "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {}
   },
   "projects": {
-    "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
+    "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj",
+        "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj",
         "projectName": "HRM.DAL.EF",
-        "projectPath": "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj",
+        "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj",
         "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-        "outputPath": "F:\\HRM\\HRM.DAL.EF\\obj\\",
+        "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",

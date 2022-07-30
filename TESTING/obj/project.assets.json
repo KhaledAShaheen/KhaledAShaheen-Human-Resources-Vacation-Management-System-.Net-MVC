@@ -4118,11 +4118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\TESTING\\TESTING.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\TESTING\\TESTING.csproj",
       "projectName": "TESTING",
-      "projectPath": "F:\\HRM\\TESTING\\TESTING.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\TESTING\\TESTING.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\TESTING\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\TESTING\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4139,8 +4139,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\HRM\\HRM.Utilities\\Utilities.csproj": {
-              "projectPath": "F:\\HRM\\HRM.Utilities\\Utilities.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Utilities\\Utilities.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Utilities\\Utilities.csproj"
             }
           }
         }

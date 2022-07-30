@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "TESTING/1.0.0": {
         "dependencies": {
+          "System.Linq.Dynamic.3.5": "1.0.0",
           "TweetinviAPI": "5.0.4",
           "Utilities": "1.0.0"
         },
@@ -360,6 +361,7 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
+      "System.Linq.Dynamic.3.5/1.0.0": {},
       "System.Net.Http/4.3.4": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -654,6 +656,7 @@
       "Utilities/1.0.0": {
         "dependencies": {
           "Serilog.AspNetCore": "5.0.0",
+          "System.Linq.Dynamic.3.5": "1.0.0",
           "System.Security.Cryptography.Cng": "5.0.0",
           "System.Security.Cryptography.Xml": "6.0.0"
         },
@@ -1046,6 +1049,13 @@
       "sha512": "sha512-5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.3.5/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kFf4tVBkWLKxUYgzDYxTCecglJJheZJPIf+saDdbVqO22ioObmJzQwhGn7/2M6nNYvUWRze/OOi4c4gn0cDehg==",
+      "path": "system.linq.dynamic.3.5/1.0.0",
+      "hashPath": "system.linq.dynamic.3.5.1.0.0.nupkg.sha512"
     },
     "System.Net.Http/4.3.4": {
       "type": "package",

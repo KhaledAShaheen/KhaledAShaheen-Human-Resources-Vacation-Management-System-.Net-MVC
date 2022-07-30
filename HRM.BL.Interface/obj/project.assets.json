@@ -860,11 +860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj",
       "projectName": "HRM.BL.Interface",
-      "projectPath": "F:\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Interface\\HRM.BL.Interface.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.BL.Interface\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.BL.Interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -881,8 +881,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\HRM\\HRM.Models\\HRM.Models.csproj": {
-              "projectPath": "F:\\HRM\\HRM.Models\\HRM.Models.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj"
             }
           }
         }

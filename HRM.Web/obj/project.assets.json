@@ -9629,11 +9629,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.Web\\HRM.Web.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Web\\HRM.Web.csproj",
       "projectName": "HRM.Web",
-      "projectPath": "F:\\HRM\\HRM.Web\\HRM.Web.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Web\\HRM.Web.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.Web\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9650,8 +9650,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\HRM\\HRM.Models\\HRM.Models.csproj": {
-              "projectPath": "F:\\HRM\\HRM.Models\\HRM.Models.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj"
             }
           }
         }

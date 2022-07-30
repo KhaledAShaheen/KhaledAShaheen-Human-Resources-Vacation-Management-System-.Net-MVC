@@ -10262,11 +10262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HRM\\HRM.Mapping\\HRM.Mapping.csproj",
+      "projectUniqueName": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Mapping\\HRM.Mapping.csproj",
       "projectName": "HRM.Mapping",
-      "projectPath": "F:\\HRM\\HRM.Mapping\\HRM.Mapping.csproj",
+      "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Mapping\\HRM.Mapping.csproj",
       "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "F:\\HRM\\HRM.Mapping\\obj\\",
+      "outputPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Mapping\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10283,14 +10283,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
-              "projectPath": "F:\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.DAL.EF\\HRM.DAL.EF.csproj"
             },
-            "F:\\HRM\\HRM.Models\\HRM.Models.csproj": {
-              "projectPath": "F:\\HRM\\HRM.Models\\HRM.Models.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Models\\HRM.Models.csproj"
             },
-            "F:\\HRM\\HRM.Web\\HRM.Web.csproj": {
-              "projectPath": "F:\\HRM\\HRM.Web\\HRM.Web.csproj"
+            "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Web\\HRM.Web.csproj": {
+              "projectPath": "C:\\Users\\ahmed\\source\\repos\\HRM\\HRM.Web\\HRM.Web.csproj"
             }
           }
         }

@@ -52,7 +52,7 @@ namespace HRM.Web.Controllers
             return View();
         }
         [System.Web.Mvc.HttpPost]
-        public async Task<IActionResult> CreateAsync(UserModel userModel)
+        public async Task<IActionResult> CreatesAsync(UserModel userModel)
         {
             if (!ModelState.IsValid)
             {
@@ -91,23 +91,21 @@ namespace HRM.Web.Controllers
         {
             return View();
         }
-        public IActionResult List()
+        public IActionResult List(Pagging pagging)
         {
+            RedirectToAction("LoadData", pagging);
             return View();
         }
-        public async Task<Microsoft.AspNetCore.Mvc.ActionResult> LoadDataAsync()
+        public async Task<Microsoft.AspNetCore.Mvc.ActionResult> LoadData(Pagging pagging)
         {
-            Pagging pagging = new Pagging();
-            pagging.ItemsPerPage = 2;
-            pagging.Page = 1;
+            
             pagging.ManagerId = GetUser().ID;
             httpClients.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", GetToken());
             var result = await httpClients.PostAsJsonAsync<Pagging>("api/User/GetAll", pagging);
             var response = await result.Content.ReadAsAsync<Response<List<UserDto>>>();
 
 
-
-            return Json(response.Data, JsonRequestBehavior.AllowGet);
+            return Json(new { data = response.Data });
 
         }
 

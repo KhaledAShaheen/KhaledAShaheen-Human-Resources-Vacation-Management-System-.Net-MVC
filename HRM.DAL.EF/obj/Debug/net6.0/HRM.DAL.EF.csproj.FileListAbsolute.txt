@@ -26,3 +26,17 @@ C:\Users\ahmed\source\repos\HRM\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.dll
 C:\Users\ahmed\source\repos\HRM\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.pdb
 C:\Users\ahmed\source\repos\HRM\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.genruntimeconfig.cache
 C:\Users\ahmed\source\repos\HRM\HRM\HRM.DAL.EF\obj\Debug\net6.0\ref\HRM.DAL.EF.dll
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.deps.json
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.runtimeconfig.json
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.dll
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\bin\Debug\net6.0\HRM.DAL.EF.pdb
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.dll
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\refint\HRM.DAL.EF.dll
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.pdb
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\HRM.DAL.EF.genruntimeconfig.cache
+C:\Users\ahmed\source\repos\HRM\HRM.DAL.EF\obj\Debug\net6.0\ref\HRM.DAL.EF.dll
