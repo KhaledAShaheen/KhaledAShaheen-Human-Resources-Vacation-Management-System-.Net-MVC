@@ -1,0 +1,1 @@
+﻿INSERT INTO Users(ID,Name,MobileNumber,Email,Password,JobTitle,ManagerID,CreationDate,Type) Values('FGDFG5544545GE32','Shadi','32342324','shadi@gmail.com','shadi123','Senior Developer','00000000000000000000','7/18/2022',1)

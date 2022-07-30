@@ -1,0 +1,861 @@
+[2022-07-19 13:51:22.464 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 13:51:23.442 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 13:51:23.442 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 13:51:23.448 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 13:51:23.448 +03:00  INF]  Hosting environment: Development
+[2022-07-19 13:51:23.448 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 13:51:26.013 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 13:51:26.565 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 561.5058ms
+[2022-07-19 13:51:26.617 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 13:51:26.617 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 13:51:26.631 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 13.8616ms
+[2022-07-19 13:51:26.707 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.5435ms
+[2022-07-19 13:51:26.933 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 13:51:27.239 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 305.9995ms
+[2022-07-19 13:51:40.714 +03:00  INF]  Request starting HTTP/2 POST https://localhost:7266/api/User/Login application/json 50
+[2022-07-19 13:51:41.941 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 13:51:41.971 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 13:51:44.726 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 13:51:50.866 +03:00  INF]  Executed DbCommand (105ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 13:51:50.928 +03:00  INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+[2022-07-19 13:51:50.946 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 8962.31ms
+[2022-07-19 13:51:50.947 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 13:51:50.957 +03:00  INF]  Request finished HTTP/2 POST https://localhost:7266/api/User/Login application/json 50 - 404 - text/plain;+charset=utf-8 10242.9660ms
+[2022-07-19 13:52:31.588 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 13:52:32.137 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 13:52:32.137 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 13:52:32.143 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 13:52:32.144 +03:00  INF]  Hosting environment: Development
+[2022-07-19 13:52:32.144 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 13:52:34.280 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 13:52:34.879 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login - -
+[2022-07-19 13:52:34.896 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 622.3084ms
+[2022-07-19 13:52:34.911 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 13:52:34.915 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 13:52:34.986 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 75.1449ms
+[2022-07-19 13:52:35.373 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 458.2960ms
+[2022-07-19 13:52:35.590 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 13:52:35.832 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login - - - 404 0 - 953.4213ms
+[2022-07-19 13:52:36.102 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 512.3789ms
+[2022-07-19 13:55:47.140 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 13:55:53.378 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 13:55:53.379 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 13:55:53.385 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 13:55:53.386 +03:00  INF]  Hosting environment: Development
+[2022-07-19 13:55:53.386 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 13:55:54.772 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login - -
+[2022-07-19 13:55:54.772 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 13:55:55.341 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login - - - 404 0 - 606.3852ms
+[2022-07-19 13:55:55.684 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 922.6005ms
+[2022-07-19 13:55:55.840 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 13:55:55.846 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.4543ms
+[2022-07-19 13:55:55.847 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 13:55:56.049 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 201.7812ms
+[2022-07-19 13:55:56.241 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 13:55:56.672 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 430.9360ms
+[2022-07-19 14:20:17.845 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 14:20:18.645 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 14:20:18.646 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 14:20:18.651 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 14:20:18.663 +03:00  INF]  Hosting environment: Development
+[2022-07-19 14:20:18.663 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 14:20:18.983 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login - -
+[2022-07-19 14:20:19.698 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login - - - 404 0 - 722.3515ms
+[2022-07-19 14:20:19.825 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 14:24:02.278 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 222453.1540ms
+[2022-07-19 14:24:02.316 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 14:24:02.320 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.3707ms
+[2022-07-19 14:24:02.371 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 14:24:02.436 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.2684ms
+[2022-07-19 14:24:03.099 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 14:24:03.496 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 397.5321ms
+[2022-07-19 14:42:44.535 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 14:42:46.192 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 14:42:46.192 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 14:42:46.198 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 14:42:46.199 +03:00  INF]  Hosting environment: Development
+[2022-07-19 14:42:46.200 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 14:42:47.755 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 14:42:47.778 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login - -
+[2022-07-19 14:42:48.308 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login - - - 404 0 - 528.3394ms
+[2022-07-19 14:56:00.293 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 14:56:00.799 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 14:56:00.800 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 14:56:00.805 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 14:56:00.806 +03:00  INF]  Hosting environment: Development
+[2022-07-19 14:56:00.806 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 14:56:04.922 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 14:56:05.724 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 810.5339ms
+[2022-07-19 14:56:05.874 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 14:56:05.876 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 14:56:05.881 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.7348ms
+[2022-07-19 14:56:05.945 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.4964ms
+[2022-07-19 14:56:06.100 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 14:56:06.489 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 388.8877ms
+[2022-07-19 14:56:40.055 +03:00  INF]  Request starting HTTP/2 POST https://localhost:7266/api/User/Login application/json 62
+[2022-07-19 14:56:40.438 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 14:56:40.502 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 14:56:42.809 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 14:56:46.843 +03:00  INF]  Executed DbCommand (78ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 14:56:46.984 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 14:56:46.994 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 14:56:48.115 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 14:56:48.135 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 7621.7305ms
+[2022-07-19 14:56:48.136 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 14:56:48.141 +03:00  INF]  Session started; Key:c3ccf96d-02c1-038f-fb40-76b95d3c50d0, Id:c9800a18-01f5-5bea-704b-393e82635126
+[2022-07-19 14:56:48.150 +03:00  INF]  Request finished HTTP/2 POST https://localhost:7266/api/User/Login application/json 62 - 200 - text/plain;+charset=utf-8 8095.1512ms
+[2022-07-19 14:59:16.827 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json 62
+[2022-07-19 14:59:16.832 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 14:59:16.833 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 14:59:16.840 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 14:59:16.854 +03:00  INF]  Executed DbCommand (9ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 14:59:16.857 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 14:59:16.862 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 14:59:16.864 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 14:59:16.869 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 35.7803ms
+[2022-07-19 14:59:16.870 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 14:59:16.870 +03:00  INF]  Session started; Key:2cea4abd-1b4b-1a6f-b74d-fe54b13c7c61, Id:c9621aa5-31eb-6808-35e6-d46d7588c4f3
+[2022-07-19 14:59:16.870 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json 62 - 200 - text/plain;+charset=utf-8 43.0089ms
+[2022-07-19 15:05:29.967 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login?username=Khaled@hotmail.com&password=KHALED application/json 62
+[2022-07-19 15:05:29.978 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 15:05:29.978 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 15:05:30.053 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 15:05:30.074 +03:00  INF]  Executed DbCommand (9ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 15:05:30.076 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 15:05:30.079 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 15:05:30.081 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 15:05:30.082 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 103.6541ms
+[2022-07-19 15:05:30.082 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 15:05:30.083 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login?username=Khaled@hotmail.com&password=KHALED application/json 62 - 200 - text/plain;+charset=utf-8 116.7240ms
+[2022-07-19 15:05:37.810 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login?username=Khaled@hotmail.com&password=KALED application/json 62
+[2022-07-19 15:05:37.811 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 15:05:37.811 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 15:05:37.813 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 15:05:37.824 +03:00  INF]  Executed DbCommand (10ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 15:05:37.825 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 15:05:37.827 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 15:05:37.828 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 15:05:37.828 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 16.6302ms
+[2022-07-19 15:05:37.828 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 15:05:37.828 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login?username=Khaled@hotmail.com&password=KALED application/json 62 - 200 - text/plain;+charset=utf-8 18.4767ms
+[2022-07-19 15:24:51.977 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 15:24:52.587 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 15:24:52.588 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 15:24:52.593 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 15:24:52.593 +03:00  INF]  Hosting environment: Development
+[2022-07-19 15:24:52.594 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 15:24:53.843 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 15:24:54.425 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 588.2591ms
+[2022-07-19 15:24:54.524 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 15:24:54.530 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.6547ms
+[2022-07-19 15:24:54.531 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 15:24:54.606 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.6231ms
+[2022-07-19 15:24:54.792 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 15:24:55.206 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 414.4623ms
+[2022-07-19 15:26:34.240 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 15:26:35.587 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 15:26:35.587 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 15:26:35.600 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 15:26:35.601 +03:00  INF]  Hosting environment: Development
+[2022-07-19 15:26:35.601 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 15:26:36.971 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - -
+[2022-07-19 15:26:37.021 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 15:26:38.655 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - - - 404 0 - 1726.5671ms
+[2022-07-19 15:26:38.789 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1767.8855ms
+[2022-07-19 15:26:38.964 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 15:26:38.968 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 15:26:39.074 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 110.5608ms
+[2022-07-19 15:26:52.103 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13134.1795ms
+[2022-07-19 15:26:52.590 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 15:26:52.804 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.2227ms
+[2022-07-19 15:27:52.347 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 15:27:55.732 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 15:27:55.735 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 15:27:55.740 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 15:27:55.740 +03:00  INF]  Hosting environment: Development
+[2022-07-19 15:27:55.741 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 15:27:56.701 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 15:27:56.701 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - -
+[2022-07-19 15:27:57.144 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - - - 404 0 - 449.0840ms
+[2022-07-19 15:28:25.655 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 28961.5848ms
+[2022-07-19 15:28:25.673 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 15:28:25.679 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.9327ms
+[2022-07-19 15:28:25.680 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 15:28:25.853 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 173.3640ms
+[2022-07-19 15:28:26.914 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 15:28:27.388 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 473.7573ms
+[2022-07-19 15:29:04.709 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 15:29:05.404 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 15:29:05.404 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 15:29:05.444 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 15:29:05.445 +03:00  INF]  Hosting environment: Development
+[2022-07-19 15:29:05.445 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 15:29:07.005 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 15:29:07.219 +03:00  INF]  Request starting HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - -
+[2022-07-19 15:29:07.689 +03:00  INF]  Request finished HTTP/1.1 GET https://localhost:7266/api/api/User/Login?username=&password= - - - 404 0 - 467.7453ms
+[2022-07-19 15:29:07.814 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 817.6481ms
+[2022-07-19 15:29:07.878 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 15:29:07.892 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 15:29:07.893 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 15.1532ms
+[2022-07-19 15:29:15.014 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7121.2672ms
+[2022-07-19 15:29:15.870 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 15:29:16.094 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.6582ms
+[2022-07-19 16:06:42.494 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:06:44.460 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:06:44.460 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:06:44.503 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:06:44.504 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:06:44.504 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:06:45.909 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:06:47.032 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:06:47.047 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 12.5356ms
+[2022-07-19 16:06:47.131 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:06:47.175 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1281.0533ms
+[2022-07-19 16:06:47.381 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 250.0640ms
+[2022-07-19 16:06:47.677 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:06:48.386 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 708.7342ms
+[2022-07-19 16:07:40.086 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:07:40.824 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:07:40.825 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:07:40.877 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:07:40.878 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:07:40.878 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:07:43.213 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:07:44.254 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1048.1257ms
+[2022-07-19 16:07:44.379 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:07:44.384 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.5408ms
+[2022-07-19 16:07:44.816 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:07:44.900 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.1914ms
+[2022-07-19 16:07:45.378 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:07:45.647 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.5427ms
+[2022-07-19 16:09:54.049 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:09:55.525 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:09:55.529 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:09:55.534 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:09:55.535 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:09:55.537 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:09:57.013 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:09:57.749 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 747.2886ms
+[2022-07-19 16:09:58.042 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:09:58.048 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:09:58.052 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 10.0677ms
+[2022-07-19 16:09:58.242 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 193.7566ms
+[2022-07-19 16:09:58.386 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:09:59.036 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 650.5438ms
+[2022-07-19 16:15:55.387 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:15:55.882 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:15:55.883 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:15:55.887 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:15:55.889 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:15:55.889 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:15:57.060 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:15:57.637 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 588.3574ms
+[2022-07-19 16:15:57.835 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:15:57.840 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.2343ms
+[2022-07-19 16:15:57.877 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:15:57.944 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.5058ms
+[2022-07-19 16:15:59.059 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:15:59.326 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.7116ms
+[2022-07-19 16:16:49.085 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:16:51.600 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:16:51.600 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:16:51.607 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:16:51.607 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:16:51.607 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:16:53.217 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:16:53.933 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 720.5094ms
+[2022-07-19 16:16:54.240 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:16:54.248 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.7136ms
+[2022-07-19 16:16:54.249 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:16:54.420 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 171.3271ms
+[2022-07-19 16:16:54.696 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:16:55.350 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 653.4640ms
+[2022-07-19 16:22:55.334 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:22:56.967 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:22:56.967 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:22:56.974 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:22:56.974 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:22:56.975 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:22:58.090 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:22:58.671 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 587.7375ms
+[2022-07-19 16:22:59.574 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:22:59.581 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.8373ms
+[2022-07-19 16:23:00.581 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:23:00.628 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.1474ms
+[2022-07-19 16:23:01.983 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:23:02.293 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 309.6386ms
+[2022-07-19 16:23:40.648 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:23:41.330 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:23:41.333 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:23:41.347 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:23:41.348 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:23:41.348 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:23:42.586 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:23:43.114 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 537.3842ms
+[2022-07-19 16:23:43.172 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:23:43.178 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.6886ms
+[2022-07-19 16:23:43.178 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:23:43.435 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 257.2613ms
+[2022-07-19 16:23:43.707 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:23:44.080 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 372.9861ms
+[2022-07-19 16:24:37.317 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:24:38.997 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:24:38.997 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:24:39.009 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:24:39.009 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:24:39.009 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:24:40.305 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:24:41.414 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1116.1714ms
+[2022-07-19 16:24:41.691 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:24:41.696 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.9413ms
+[2022-07-19 16:24:41.696 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:24:41.960 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 264.3385ms
+[2022-07-19 16:24:42.135 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:24:42.535 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 399.9214ms
+[2022-07-19 16:26:10.369 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 16:26:11.049 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 16:26:11.050 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 16:26:11.054 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 16:26:11.055 +03:00  INF]  Hosting environment: Development
+[2022-07-19 16:26:11.055 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 16:26:12.760 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 16:26:13.410 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 627.0052ms
+[2022-07-19 16:26:13.459 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 16:26:13.459 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 16:26:13.464 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.7280ms
+[2022-07-19 16:26:13.719 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 257.8558ms
+[2022-07-19 16:26:14.071 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 16:26:14.441 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 370.3505ms
+[2022-07-19 17:09:14.456 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:09:15.174 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:09:15.175 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:09:15.181 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:09:15.181 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:09:15.182 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:09:17.146 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:09:17.958 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 842.0130ms
+[2022-07-19 17:09:17.968 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:09:17.976 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.6568ms
+[2022-07-19 17:09:18.012 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:09:18.237 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 225.3327ms
+[2022-07-19 17:09:18.824 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:09:19.161 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 336.5731ms
+[2022-07-19 17:11:01.051 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:11:01.300 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:11:01.301 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:11:01.306 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:11:01.306 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:11:01.306 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:11:28.602 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:11:29.905 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:11:29.906 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:11:29.911 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:11:29.911 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:11:29.912 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:12:24.277 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:12:35.673 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:12:35.677 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:12:35.683 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:12:35.683 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:12:35.683 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:12:37.157 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:12:37.916 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 767.9354ms
+[2022-07-19 17:12:38.132 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:12:38.133 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:12:38.141 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 9.1145ms
+[2022-07-19 17:12:38.317 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.4309ms
+[2022-07-19 17:12:38.605 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:12:38.960 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 354.6209ms
+[2022-07-19 17:17:39.399 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:17:40.318 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:17:40.319 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:17:40.323 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:17:40.324 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:17:40.324 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:17:42.888 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:17:55.218 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 12334.7341ms
+[2022-07-19 17:17:56.389 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:17:56.389 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:17:56.404 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 11.7663ms
+[2022-07-19 17:17:56.502 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 112.6851ms
+[2022-07-19 17:17:58.976 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:17:59.244 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.4058ms
+[2022-07-19 17:41:59.717 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:42:01.892 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:42:01.893 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:42:01.897 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:42:01.897 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:42:01.898 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:42:03.690 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:42:04.590 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 907.8114ms
+[2022-07-19 17:42:04.602 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:42:04.610 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.6099ms
+[2022-07-19 17:42:04.640 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:42:04.768 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.3642ms
+[2022-07-19 17:42:05.243 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:42:05.958 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 714.5870ms
+[2022-07-19 17:44:27.276 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:44:29.198 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:44:29.198 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:44:29.203 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:44:29.203 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:44:29.203 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:44:30.908 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:44:32.129 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:44:32.135 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.8206ms
+[2022-07-19 17:44:32.135 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1233.5095ms
+[2022-07-19 17:44:32.181 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:44:33.066 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 885.0511ms
+[2022-07-19 17:44:39.966 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:44:40.309 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 342.5084ms
+[2022-07-19 17:45:08.393 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:45:09.287 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:45:09.288 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:45:09.292 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:45:09.293 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:45:09.293 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:45:11.122 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:45:11.948 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:45:11.948 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:45:11.951 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 838.4676ms
+[2022-07-19 17:45:11.959 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 11.1629ms
+[2022-07-19 17:45:12.206 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 257.7791ms
+[2022-07-19 17:45:13.062 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:45:13.340 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.3753ms
+[2022-07-19 17:47:55.224 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:47:56.216 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:47:56.217 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:47:56.221 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:47:56.221 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:47:56.221 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:47:57.868 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:47:58.717 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 851.6091ms
+[2022-07-19 17:47:58.933 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:47:59.008 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:47:59.014 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 80.9776ms
+[2022-07-19 17:47:59.335 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 326.4170ms
+[2022-07-19 17:47:59.649 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:48:00.356 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 706.6077ms
+[2022-07-19 17:50:27.045 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:50:28.932 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:50:28.932 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:50:28.939 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:50:28.939 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:50:28.940 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:50:30.667 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:50:31.495 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 832.9420ms
+[2022-07-19 17:50:31.544 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:50:31.548 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:50:31.558 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 14.5156ms
+[2022-07-19 17:50:31.811 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 262.8940ms
+[2022-07-19 17:50:32.012 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:50:32.462 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 449.2635ms
+[2022-07-19 17:50:40.956 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/login application/json;+charset=utf-8 -
+[2022-07-19 17:50:41.932 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/login application/json;+charset=utf-8 - - 404 0 - 975.6644ms
+[2022-07-19 17:56:25.527 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:56:26.256 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:56:26.259 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:56:26.272 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:56:26.272 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:56:26.273 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:56:28.636 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:56:29.295 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 665.3563ms
+[2022-07-19 17:56:29.462 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:56:29.480 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:56:29.532 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 69.6422ms
+[2022-07-19 17:56:30.563 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1082.8090ms
+[2022-07-19 17:56:30.705 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:56:31.072 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 367.4895ms
+[2022-07-19 17:56:47.217 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:56:48.627 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:56:48.629 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:56:48.635 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:56:48.635 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:56:48.635 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:56:49.980 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:56:50.732 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 758.6148ms
+[2022-07-19 17:56:51.403 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:56:51.409 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.1358ms
+[2022-07-19 17:56:51.432 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:56:51.460 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.8848ms
+[2022-07-19 17:56:52.841 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:56:53.120 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.7316ms
+[2022-07-19 17:56:58.796 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/Login application/json;+charset=utf-8 -
+[2022-07-19 17:56:59.042 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/Login application/json;+charset=utf-8 - - 404 0 - 245.3460ms
+[2022-07-19 17:57:20.231 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 17:57:21.443 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 17:57:21.445 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 17:57:21.449 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 17:57:21.449 +03:00  INF]  Hosting environment: Development
+[2022-07-19 17:57:21.449 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 17:57:22.842 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 17:57:23.694 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 859.0745ms
+[2022-07-19 17:57:23.753 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 17:57:23.793 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 17:57:23.935 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 182.2434ms
+[2022-07-19 17:57:24.093 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 302.1972ms
+[2022-07-19 17:57:24.294 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 17:57:24.863 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 568.9731ms
+[2022-07-19 17:57:36.091 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/Login application/json;+charset=utf-8 -
+[2022-07-19 17:57:36.276 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/Login application/json;+charset=utf-8 - - 404 0 - 184.2955ms
+[2022-07-19 17:58:30.917 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:01:04.203 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:01:06.657 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:01:06.657 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:01:06.671 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:01:06.671 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:01:06.671 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:01:09.059 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:01:11.368 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:01:11.370 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:01:11.371 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 2318.0896ms
+[2022-07-19 18:01:11.444 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 76.5591ms
+[2022-07-19 18:01:12.138 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 768.6608ms
+[2022-07-19 18:01:12.280 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:01:12.639 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 359.3058ms
+[2022-07-19 18:01:22.409 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266//api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:01:22.630 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266//api/User/Login application/json;+charset=utf-8 - - 404 0 - 221.1280ms
+[2022-07-19 18:02:41.834 +03:00  INF]  Request starting HTTP/2 POST https://localhost:7266/api/User/Login application/json 62
+[2022-07-19 18:02:41.850 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:02:41.900 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:02:46.576 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:02:56.319 +03:00  INF]  Executed DbCommand (151ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:02:56.553 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:02:56.570 +03:00  INF]  Executed DbCommand (4ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:02:57.655 +03:00  INF]  Accessing expired session, Key:c3ccf96d-02c1-038f-fb40-76b95d3c50d0
+[2022-07-19 18:02:57.671 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:02:57.687 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 15773.9315ms
+[2022-07-19 18:02:57.688 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:02:57.689 +03:00  INF]  Session started; Key:c3ccf96d-02c1-038f-fb40-76b95d3c50d0, Id:d6ee1d25-7099-866a-75e9-04caeada7a4c
+[2022-07-19 18:02:57.700 +03:00  INF]  Request finished HTTP/2 POST https://localhost:7266/api/User/Login application/json 62 - 200 - text/plain;+charset=utf-8 15866.5553ms
+[2022-07-19 18:04:20.894 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:04:26.697 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:04:26.699 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:04:26.704 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:04:26.704 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:04:26.704 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:04:29.716 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:04:31.429 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1729.8524ms
+[2022-07-19 18:05:08.712 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:05:08.712 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:05:08.719 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.9476ms
+[2022-07-19 18:05:15.299 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6586.4849ms
+[2022-07-19 18:05:28.750 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:05:29.090 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 340.0904ms
+[2022-07-19 18:05:29.378 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:05:29.620 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:05:29.700 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:05:32.807 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:05:34.668 +03:00  INF]  Executed DbCommand (118ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:05:35.154 +03:00  INF]  Executed DbCommand (115ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:05:35.251 +03:00  INF]  Executed DbCommand (83ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:05:35.872 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:05:35.935 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 6187.2124ms
+[2022-07-19 18:05:35.936 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:05:35.939 +03:00  INF]  Session started; Key:91d4bbd1-ef17-dcae-d43a-f7c82ff86626, Id:e4689314-9d3f-3ad2-62c0-24a1c1e02689
+[2022-07-19 18:05:35.950 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 6572.2062ms
+[2022-07-19 18:06:08.282 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:06:08.288 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:06:08.288 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:06:08.295 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:06:08.308 +03:00  INF]  Executed DbCommand (8ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:06:08.312 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:06:08.319 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:06:08.321 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:06:08.322 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 33.4466ms
+[2022-07-19 18:06:08.322 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:06:08.322 +03:00  INF]  Session started; Key:cf790355-9fa9-a67e-45d8-26dd055b065d, Id:917c4263-2e09-a632-7c5a-6c5a2c1b3017
+[2022-07-19 18:06:08.323 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 40.6971ms
+[2022-07-19 18:06:53.945 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:06:54.883 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:06:54.883 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:06:54.888 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:06:54.889 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:06:54.889 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:06:56.814 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:06:57.503 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:06:57.504 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 696.1470ms
+[2022-07-19 18:06:57.521 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.3958ms
+[2022-07-19 18:06:57.527 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:06:58.235 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 707.7376ms
+[2022-07-19 18:06:58.425 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:06:58.829 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 403.2340ms
+[2022-07-19 18:07:06.952 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:07:07.142 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:07:07.184 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:07:09.517 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:07:10.853 +03:00  INF]  Executed DbCommand (79ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:07:10.975 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:07:10.986 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:07:11.405 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:07:11.426 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 4233.5206ms
+[2022-07-19 18:07:11.427 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:07:11.430 +03:00  INF]  Session started; Key:85790fde-785b-e58d-aa12-67b40a53c305, Id:51712a9a-ec3d-c7b6-ce34-ba9ee0ad5c9e
+[2022-07-19 18:07:11.438 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 4486.4067ms
+[2022-07-19 18:10:10.849 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:10:11.577 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:10:11.577 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:10:11.589 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:10:11.590 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:10:11.590 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:10:14.477 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:10:15.134 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 658.4871ms
+[2022-07-19 18:10:15.451 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:10:15.457 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.5468ms
+[2022-07-19 18:10:15.458 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:10:15.598 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 140.7319ms
+[2022-07-19 18:10:15.773 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:10:16.539 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 766.5821ms
+[2022-07-19 18:10:34.786 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:10:35.583 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:10:35.588 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:10:35.594 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:10:35.594 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:10:35.594 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:10:37.395 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:10:38.110 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 722.0057ms
+[2022-07-19 18:10:38.122 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:10:38.156 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:10:38.214 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 77.0145ms
+[2022-07-19 18:10:38.409 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 252.9700ms
+[2022-07-19 18:10:38.694 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:10:38.998 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 304.4922ms
+[2022-07-19 18:10:52.590 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:10:52.832 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:10:52.882 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:10:54.947 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:10:56.244 +03:00  INF]  Executed DbCommand (80ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:10:56.314 +03:00  INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:10:56.337 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 3438.7395ms
+[2022-07-19 18:10:56.338 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:10:56.347 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 404 - application/json;+charset=utf-8 3756.3367ms
+[2022-07-19 18:26:52.884 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:26:55.981 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:26:55.981 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:26:56.003 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:26:56.004 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:26:56.004 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:26:59.626 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:27:02.018 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 2399.3868ms
+[2022-07-19 18:27:04.700 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:27:05.119 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:27:05.162 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:27:05.201 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:27:05.206 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.9749ms
+[2022-07-19 18:27:05.940 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:27:06.107 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.7852ms
+[2022-07-19 18:27:07.731 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:27:09.518 +03:00  INF]  Executed DbCommand (114ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:27:09.580 +03:00  INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:27:09.602 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 4428.8154ms
+[2022-07-19 18:27:09.602 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:27:09.610 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 404 - application/json;+charset=utf-8 4909.3986ms
+[2022-07-19 18:27:27.207 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:28:16.673 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49466.8801ms
+[2022-07-19 18:28:34.544 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:28:34.548 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:28:34.548 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:28:34.556 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:28:34.576 +03:00  INF]  Executed DbCommand (13ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:28:34.708 +03:00  INF]  Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:28:34.723 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:28:35.139 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:28:35.146 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 597.3821ms
+[2022-07-19 18:28:35.146 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:28:35.147 +03:00  INF]  Session started; Key:b2e6f405-d7f5-8b3c-acf3-f740d7f2d3f6, Id:5f153871-4a71-3846-47bf-4ecf8b983e9f
+[2022-07-19 18:28:35.149 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 604.7926ms
+[2022-07-19 18:31:05.957 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:31:08.474 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:31:08.475 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:31:08.480 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:31:08.480 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:31:08.480 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:31:10.990 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:31:12.832 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1850.2775ms
+[2022-07-19 18:31:13.127 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:31:13.130 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:31:13.133 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.9199ms
+[2022-07-19 18:31:13.225 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.2299ms
+[2022-07-19 18:31:13.580 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:31:14.012 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 431.6206ms
+[2022-07-19 18:31:25.702 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:31:25.932 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:31:25.978 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:31:28.256 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:31:29.605 +03:00  INF]  Executed DbCommand (94ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:31:29.806 +03:00  INF]  Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:31:29.820 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:31:30.230 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:31:30.255 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 4264.4128ms
+[2022-07-19 18:31:30.256 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:31:30.258 +03:00  INF]  Session started; Key:5ba902ab-f920-364e-f6ac-8a4f5482dbc3, Id:cd2d4daa-0926-8d60-545a-7cc4dfd901da
+[2022-07-19 18:31:30.270 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 4567.5843ms
+[2022-07-19 18:32:03.056 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:32:03.764 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:32:03.766 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:32:03.771 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:32:03.771 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:32:03.771 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:32:06.156 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:32:06.968 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 819.6545ms
+[2022-07-19 18:32:11.019 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:32:11.027 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.1548ms
+[2022-07-19 18:32:11.415 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:32:11.523 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.9802ms
+[2022-07-19 18:32:11.917 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:32:12.236 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:32:12.297 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:32:14.428 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:32:14.630 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 201.8008ms
+[2022-07-19 18:32:14.735 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:32:16.215 +03:00  INF]  Executed DbCommand (95ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:32:16.440 +03:00  INF]  Executed DbCommand (38ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:32:16.461 +03:00  INF]  Executed DbCommand (8ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:32:16.938 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:32:16.959 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 4652.035ms
+[2022-07-19 18:32:16.959 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:32:16.961 +03:00  INF]  Session started; Key:28fc1728-1e09-1bbf-7c52-ffa41551dada, Id:b52c07b1-477c-7277-1cb8-7a29df3e609f
+[2022-07-19 18:32:16.969 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 5052.2307ms
+[2022-07-19 18:33:09.675 +03:00  INF]  User profile is available. Using 'C:\Users\kshah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-07-19 18:33:11.022 +03:00  INF]  Now listening on: https://localhost:7266
+[2022-07-19 18:33:11.022 +03:00  INF]  Now listening on: http://localhost:5266
+[2022-07-19 18:33:11.027 +03:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-07-19 18:33:11.027 +03:00  INF]  Hosting environment: Development
+[2022-07-19 18:33:11.027 +03:00  INF]  Content root path: C:\Users\kshah\OneDrive\Documents\GitHub\HRM\HRM.WebApi\
+[2022-07-19 18:33:14.143 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/index.html - -
+[2022-07-19 18:33:15.788 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/index.html - - - 200 - text/html;charset=utf-8 1641.0066ms
+[2022-07-19 18:33:16.920 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - -
+[2022-07-19 18:33:16.927 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.2867ms
+[2022-07-19 18:33:16.927 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/_vs/browserLink - -
+[2022-07-19 18:33:18.865 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1937.6681ms
+[2022-07-19 18:33:29.099 +03:00  INF]  Request starting HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - -
+[2022-07-19 18:33:29.401 +03:00  INF]  Request finished HTTP/2 GET https://localhost:7266/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 303.9257ms
+[2022-07-19 18:34:22.186 +03:00  INF]  Request starting HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 -
+[2022-07-19 18:34:22.348 +03:00  INF]  Executing endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:34:22.381 +03:00  INF]  Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(HRM.Models.LoginDto) on controller Controllers.UserController (HRM.WebApi).
+[2022-07-19 18:34:23.913 +03:00  INF]  Entity Framework Core 6.0.6 initialized 'HrmContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.6' with options: None
+[2022-07-19 18:34:24.925 +03:00  INF]  Executed DbCommand (53ms) [Parameters=[@__loginDto_UserName_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginDto_UserName_0
+[2022-07-19 18:34:25.044 +03:00  INF]  Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+[2022-07-19 18:34:25.054 +03:00  INF]  Executed DbCommand (2ms) [Parameters=[@__user_ManagerID_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[ID], [u].[CreationDate], [u].[Email], [u].[JobTitle], [u].[ManagerID], [u].[MobileNumber], [u].[Name], [u].[Password], [u].[Type]
+FROM [Users] AS [u]
+WHERE ([u].[ID] = @__user_ManagerID_0) AND ([u].[Type] = 1)
+[2022-07-19 18:34:25.382 +03:00  INF]  Executing OkObjectResult, writing value of type 'System.String'.
+[2022-07-19 18:34:25.407 +03:00  INF]  Executed action Controllers.UserController.Login (HRM.WebApi) in 3013.7253ms
+[2022-07-19 18:34:25.407 +03:00  INF]  Executed endpoint 'Controllers.UserController.Login (HRM.WebApi)'
+[2022-07-19 18:34:25.410 +03:00  INF]  Session started; Key:db5c0fe6-5bd0-dab7-f0e3-88d6baf32326, Id:82a1c4dd-ad74-37b7-b0de-d4aec2521851
+[2022-07-19 18:34:25.418 +03:00  INF]  Request finished HTTP/1.1 POST https://localhost:7266/api/User/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 3232.1156ms

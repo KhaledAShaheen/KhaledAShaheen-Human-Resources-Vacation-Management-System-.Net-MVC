@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="System.Linq.Dynamic.3.5" Version="1.0.0" />
+    <PackageReference Include="TweetinviAPI" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.BL.Interface\HRM.BL.Interface.csproj" />
+    <ProjectReference Include="..\HRM.DAL.EF\HRM.DAL.EF.csproj" />
+    <ProjectReference Include="..\HRM.Mapping\HRM.Mapping.csproj" />
+    <ProjectReference Include="..\HRM.Utilities\Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

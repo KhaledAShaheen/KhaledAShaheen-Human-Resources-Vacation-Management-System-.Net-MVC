@@ -1,0 +1,86 @@
+﻿
+<h2>List</h2>
+<head>
+    <style>
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    </style>
+</head>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered table-striped" id="tblStudent">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">MobileNumber</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">JobTitle</th>
+                    <th scope="col">ManagerId</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+    <script>
+
+   
+
+
+        $(document).ready(function () {
+              bindDatatable;
+
+        });
+
+        function bindDatatable() {
+            datatable = $('#tblStudent')
+                .DataTable({
+                    "sAjaxSource": "/User/LoadData",
+                    "bServerSide": true,
+                    "bProcessing": true,
+                    "order": [[1, 'asc']],
+                    "language": {
+                        "emptyTable": "No record found.",
+                        "processing":
+                            '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+                    },
+
+                    "columns": [
+                        
+                        {
+                            "data": "Name",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "Type",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "MobileNumber",
+                            "autoWidth": true,
+                            "searchable": true
+                        }, {
+                            "data": "Email",
+                            "autoWidth": true,
+                            "searchable": true
+                        }, {
+                            "data": "JobTitle",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                        {
+                            "data": "ManagerId",
+                            "autoWidth": true,
+                            "searchable": true
+                        },
+                    ]
+                });
+        }
+    </script>
+}
